@@ -1,0 +1,351 @@
+
+
+Pause slideshow
+Kreo
+Bestsellers
+Bestsellers
+Shop by Setup
+Shop by Setup
+New Launches
+New Launches
+Monitor
+Monitor
+Ergo Chairs
+Ergo Chairs
+Keyboards
+Keyboards
+Mouse and Mousepads
+Mouse and Mousepads
+Controllers
+Controllers
+Audio Video & Lights
+Audio Video & Lights
+Software & Support
+Software & Support
+Search
+Cart
+FAQ's
+General
+
+Payments
+1. Payment deducted, but no order details received.
+If the payment for your order has been deducted from your account, but you haven’t received any order details, it’s possible that your order was not captured with us.
+- The amount will be refunded to your account within the next 7 business days.
+
+2. Are there any hidden charges when I make a payment?
+No, there are no hidden charges. All listed prices are inclusive of all taxes.
+
+3. What payment options do you have?
+We offer multiple payment options for your convenience:
+- Credit/Debit Card Payment
+- Net Banking
+- Wallets – PhonePe, Mobikwik, Airtel Money
+- UPI
+- Kreo Pay Later
+
+Shopping
+1. When can I expect the delivery of my product?
+
+Once you receive the shipping confirmation, your package will be delivered within 3-5 business days. We are constantly working on getting your order delivered as soon as possible.
+
+2. How do I track my order details?
+
+An Email and an WhatsApp message with the tracking link will be sent once the order has been dispatched from our warehouse. You can also track your order from your account on the website.
+
+If you are an existing user, you can simply log in to your account and track your current and past order details. However, if you haven’t made an account and have signed in as a guest user - we advise you to create your account with the same guest user email ID.
+
+Please note that it can take some time before the tracking information is uploaded.
+
+3. What are the delivery charges?
+
+There are no shipping charges for any orders at Kreo-tech.com
+
+Order Related Issues
+1. How can I cancel my order?
+You have the option to cancel your order before it is dispatched from our warehouse. To cancel the order:
+Contact the support team over WhatsApp
+
+2. How to change my delivery address?Contact our support team on WhatsApp
+If it's not shipped, you can contact the support team over whatsapp and they'll help yo with it.
+The delivery address cannot be changed once the product has been dispatched from our warehouse.
+
+3. What are the delivery charges?
+There are no shipping charges for any prepaid orders at Kreo.
+
+4. How do I track my order details?
+An Email and an WhatsApp message with the tracking link will be sent once the order has been dispatched from our warehouse. You can also track your order from your account on the website.
+If you are an existing user, you can simply log in to your account and
+track your current and past order details. However, if you haven't made an account and have signed in as a guest user - we advise you to create your account with the same guest user email ID.
+Please note that it can take some time before the tracking information is uploaded.
+
+Warranty
+1. Is my product still under warranty?
+
+The warranty for your product will be mentioned on the packaging and it begins from the date of delivery.
+
+2. How do I register a complaint regarding a product?
+
+You can register the complaint online HERE.
+
+3. When is replacement acceptable?
+
+Only when a wrong/damaged product has been received by the customer and when you face an issue with the product within the warranty period.
+
+Warranty is not applicable in the following cases:
+- Product not used as per the instruction manual.
+- Physical Damage Visible Damage such as cracks, dents, or other Physical harm.
+- Unauthorized Repairs or Damage - Repairs by Unauthorized persons or Damage caused by pests, pets, or rodents.
+- Accidental Damage:Damage from liquid spills, extreme temperatures, moisture, or using non-specified chargers. Includes broken or cut wires.
+- Improper Use:Damage from reckless handling or external factors like lightning, voltage fluctuations, or Acts of God.
+- Unauthorized Accessories:Damage caused by using Accessories not provided by Kreo.
+
+Returns & Replacements
+What is your return policy?
+
+You can return your product within 7 days of delivery, provided:
+No signs of usage
+Original box contents are included
+
+Do you offer reverse pickup?
+
+Yes, we provide reverse pickup for eligible returns.
+
+Where do I send the product for repair?
+
+No need to send it yourself — we will initiate the pickup process for repairs.
+
+When is replacement acceptable?
+Only when the customer has received a wrong/damaged product and when you face an issue with the product within the warranty period ( Please check warranty guidelines on Kreo Website).
+
+Miscellaneous
+Can I change my delivery address after placing the order?
+Yes.
+
+Do you offer express/same-day delivery?
+Express in some cases, not same day delivery.
+
+I was charged twice how can I get a refund?
+
+It will be refund back in few days.
+
+How long does it take to get a refund after return?
+2 to 3 days.
+
+How can I register my product for warranty?
+
+The warranty starts from the date mentioned in the invoice.
+
+I lost my invoice can I still claim warranty?
+
+If website order then we need the order if , else we can see the manufacturing date in some rare cases.
+
+Do you have a service center in my city?
+We don't have offline service centers, If you face any issue, explain us about the issue, we will help you over WhatsApp.
+
+Can I get a demo before buying?
+Yes, you can get a demo by video call which is on website.
+
+Do you offer bulk/corporate orders?
+Yes, we offer bulk corporate orders.
+
+How do I contact customer support?
+WhatsApp us on +91-9611507877 or mail us at help@kreo-tech.com.
+
+Do you sell offline or only online?
+We sell products only online as of now.
+
+Chimera (Wireless)
+
+Why does the lighting go off when I move the mouse?
+This is a feature we have implemented to help conserve battery life giving you maximum usage time.
+
+Why don’t the software changes get saved in Bluetooth Mode?
+Device is not getting detected or paired in Bluetooth mode
+If the mouse is not detected for some reason in Bluetooth mode, you can initiate force pairing by pressing and holding the following button combo for 3s. (Left Click + Scroll Click + Right Click)
+
+ What is the battery life?
+When used in 2.4G Mode it is around 24hrs of usage time
+When used in Bluetooth Mode it is around 30hrs of usage time
+What is the latency for this mouse?
+When used in 2.4G Mode it is between 10 - 20ms 
+When used in Bluetooth Mode it is around 250ms
+What is the charging indicator?
+When the mouse is charging, the light in the scroll wheel will be blue in colour and when it is fully charged, it will go off.
+
+How can I completely turn off the RGB Lighting?
+The RGB Lighting can be completely turned off through the software, under the Lighting section.
+
+Kreo Hive/Hive98
+
+Which switches are compatible with the Hive?
+If your Hive keyboard has red keycaps, it is only hot-swappable with OUTEMU switches.
+
+The newer variants of the Hive keyboard support both 3-pin and 5-pin hot-swappable switches.
+
+How do I fix the swapped functionality of the Alt and Windows keys?
+If your Alt and Windows keys are swapped, press Fn + S and Fn + A to revert them to their default functions.
+
+
+How do I turn Scroll Lock on or off?
+To toggle Scroll Lock on or off, press Fn + I.
+
+What should I do if the Double Click or Switch isn't working on my Hive keyboard?
+Start by resetting your keyboard by holding Fn + Esc for a few seconds. Then:
+
+Remove the keycaps.
+
+Clean the switches and PCB using a soft brush, cloth, or by blowing air.
+
+If the issue persists, try swapping the switch with a different one to isolate the problem.
+
+
+
+
+
+Kreo Swarm
+
+How do I fix Switch or Reset issues on my Swarm keyboard?
+Hold Fn + Esc for a few seconds to reset the keyboard.
+
+What should I do if the toggle button isn’t working?
+If you're experiencing toggle button issues within the initial days of purchase, contact us for a direct replacement.
+
+Kreo Mirage
+
+What is Turbo Mode and how does it work?
+Turbo Mode allows a single button press to perform repeated actions automatically. When activated, holding or pressing the button triggers rapid, repeated inputs—ideal for games requiring fast button mashing.
+
+How do I activate Turbo Mode?
+Hold the Turbo button and press the desired button you want to assign for Turbo Mode. That button will now auto-repeat when held.
+
+How do I adjust the speed of Turbo Mode?
+Hold the Turbo button and move the right joystick up or down to cycle through speed options
+
+Can I assign multiple buttons to Turbo Mode?
+Yes! You can assign multiple buttons to Turbo Mode at the same time.
+
+How do I remove a button from Turbo Mode?
+Press Turbo + the same button again to disable Turbo for that specific button.
+
+How do I reset Turbo Mode completely?
+Hold the Turbo button for 5 seconds to reset all Turbo Mode settings.
+
+How do I change the vibration settings?
+Make sure the controller is connected via Bluetooth or USB. Then:
+Hold the Turbo button.
+
+Move the left joystick up or down to cycle through 4 intensity levels.
+
+Release the Turbo button when you reach your desired intensity.
+
+Note: Vibration works best on PS or when connected via wired mode.
+
+How do I use the Macro function on Mirage?
+Connect the controller to a PC or host device.
+Hold the Profile (custom setting) key for 3 seconds. The RGB light under the PS key will flash.
+Press M1 (or M2) to begin customization (LED will flash blue or purple respectively).
+Press the sequence of keys you want to assign.
+Press the key again to save and exit.
+How do I clear a macro on M1 or M2?
+Enter custom setting mode by holding the Profile key for 3 seconds.
+Press M1 (or M2) to clear.
+Then, press the Profile key again to exit.
+How do I reset the Kreo Mirage controller?
+Soft reset: Press and hold L3 + R3 + Home together for a few seconds.
+Hard resetreset button through the small hole next to the M1 button on the back (while in wired mode).
+What's the best way to use Mirage on PC?
+In wired mode, switch to X Input for best compatibility with Windows games.
+
+Install DS4 Windows software to:
+
+Use the trackpad as a mouse.
+Customize inputs.
+Adjust dead zones.
+Enable multiple controller support.
+
+What if some games aren’t working in wireless mode?
+Wireless mode uses D Input, which has limited compatibility with Windows. To fix this, launch the game through Steam, which can simulate X Input for improved compatibility.
+
+Owl
+
+ How do I set the camera to record at 60fps?
+The Kreo OWL by default comes set at 30fps. To enable 60fps recording, ensure to check and select the desired FPS and Resolution in the respective software being used for recording.
+
+Which software can I use to record with OWL at 60fps?
+Use this text to answer questions in as much detail as possible for your customers.
+
+Beluga
+
+ Is the headphone compatible with consoles?
+Yes the Beluga 3.5mm is compatible with consoles and can be connected to the controller for usage.
+
+What is the wire length?
+The wire length is 1.5m and it is a braided wire.
+
+REC
+
+Does the REC come with a stand?
+Yes there is an included desk stand straight out of the box.
+
+What is the ANC feature?
+ANC stands for “Active Noise Cancellation”, this can be used to reduce background / environmental noise which are at a distance when recording to give more emphasis to the lead voice or instrument that is the focus of the recording.
+
+Can I use this mic for Skype or Zoom calls?
+Yes definitely! The mic would work great for these calls and the added ANC function would also help reduce any background noise.
+
+Kreo Pegasus
+
+RGB not turning on
+By default, the mouse comes with the RGB lighting turned off. The combo to turn lighting mode on/off is Press and hold the back button and the scroll click at the same time.
+
+
+Jitter/Input lag
+Please reset the mouse by removing the dongle and Pressing the left, right and centre/scroll buttons together till the light blinks. Then insert the dongle.
+- Before this ensure that the plastic film on the mouse feet is removed
+- There is not much interference between the dongle and the mouse (other wireless devices)
+- Distance between the mouse and dongle should be less and there should be no obstacles between them ( use the given extender)
+
+Any other issues get the product back for testing.
+Frequently asked question
+Use this text to answer questions in as much detail as possible for your customers.
+
+Quick Links
+Downloads
+FAQs
+Track Order
+Returns & Exchanges
+Warranty
+Contact Us
+B2B Orders
+Kreator Program
+Campus Ambassador Program
+Blog
+Socials
+X
+Instagram
+Youtube
+Discord
+Reach out to us:
++91 9611507877
+
+help@kreo-tech.com
+
+© 2026 Kreo / Lukus Brands Pvt Ltd. 
+Refund policy
+Privacy policy
+Terms of service
+Shipping policy
+Contact information
+
+Live Product Demo
+Get expert shopping help now
+×
+Mon - Sat : 10am - 7pm
+Chat with Our Support Team
+
+Live Video Shopping
+
+Ask Krea
+Drops & restocks sell out fast, want an instant heads-up?
+
+Turn on alerts
