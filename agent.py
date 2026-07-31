@@ -8,9 +8,8 @@ from logger import log_conversation
 load_dotenv()
 
 # Connect to the same ChromaDB we built with ingest.py
-embedding_fn = embedding_functions.SentenceTransformerEmbeddingFunction(
-    model_name="all-MiniLM-L6-v2"
-)
+embedding_fn = embedding_functions.DefaultEmbeddingFunction()
+
 client = chromadb.PersistentClient(path="./chroma_db")
 collection = client.get_or_create_collection(
     name="kreo_support",
@@ -19,7 +18,7 @@ collection = client.get_or_create_collection(
 
 # Groq client
 groq_client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
-def retrieve_context(question, n_results=3, distance_threshold=0.65):
+def retrieve_context(question, n_results=3, distance_threshold=1.3):
     results = collection.query(
         query_texts=[question],
         n_results=n_results
