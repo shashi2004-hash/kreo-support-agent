@@ -5,11 +5,10 @@ from agent import ask_agent
 import subprocess
 import os
 app = FastAPI()
-# Run ingestion on startup if the database doesn't exist yet
-if not os.path.exists("./chroma_db"):
-    print("No database found, running ingestion...")
-    subprocess.run(["python", "ingest.py"])
-    print("Ingestion complete.")
+# Always run ingestion on startup to guarantee fresh, populated data
+print("Running ingestion on startup...")
+subprocess.run(["python", "ingest.py"])
+print("Ingestion complete.")
 
 # Allow the frontend HTML file to call this API from the browser
 app.add_middleware(
