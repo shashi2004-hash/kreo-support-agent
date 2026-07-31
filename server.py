@@ -2,15 +2,9 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from agent import ask_agent
-import subprocess
-import os
-app = FastAPI()
-# Always run ingestion on startup to guarantee fresh, populated data
-print("Running ingestion on startup...")
-subprocess.run(["python", "ingest.py"])
-print("Ingestion complete.")
 
-# Allow the frontend HTML file to call this API from the browser
+app = FastAPI()
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -28,4 +22,4 @@ def chat(request: ChatRequest):
 
 @app.get("/")
 def health_check():
-    return {"status": "Kreo support agent is running"}  
+    return {"status": "Kreo support agent is running"}
