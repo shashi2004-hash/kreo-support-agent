@@ -1,25 +1,8 @@
 import re
-import chromadb
-from chromadb.utils import embedding_functions
-
-embedding_fn = embedding_functions.DefaultEmbeddingFunction()
-
-client = chromadb.PersistentClient(path="./chroma_db")
-
-# Delete old collection so we don't mix old bad chunks with new good ones
-try:
-    client.delete_collection("kreo_support")
-except Exception:
-    pass
-
-collection = client.get_or_create_collection(
-    name="kreo_support",
-    embedding_function=embedding_fn
-)
+import pickle
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 def chunk_by_qa(text):
-    """Groups each question with its answer into one chunk, instead of
-    cutting text every N characters."""
     lines = [l.rstrip() for l in text.split("\n")]
     chunks = []
     current = []
@@ -58,7 +41,6 @@ def chunk_by_qa(text):
     if current:
         chunks.append("\n".join(current).strip())
 
-    # merge tiny fragments (like lone headers) into the next chunk
     merged = []
     buffer = ""
     for c in chunks:
@@ -74,24 +56,36 @@ def chunk_by_qa(text):
 
     return merged
 
-def ingest_file(filepath, source_name):
-    with open(filepath, "r", encoding="utf-8") as f:
-        text = f.read()
+def load_all_chunks():
+    files = [
+        ("data/faq.txt", "faq"),
+        ("data/shipping_refund.txt", "shipping_refund"),
+        ("data/warranty.txt", "warranty"),
+        ("data/chair_warranty.txt", "chair_warranty"),
+    ]
+    all_chunks = []
+    all_sources = []
+    for filepath, source in files:
+        with open(filepath, "r", encoding="utf-8") as f:
+            text = f.read()
+        chunks = chunk_by_qa(text)
+        all_chunks.extend(chunks)
+        all_sources.extend([source] * len(chunks))
+        print(f"Ingested {len(chunks)} chunks from {source}")
+    return all_chunks, all_sources
 
-    chunks = chunk_by_qa(text)
-    ids = [f"{source_name}_{i}" for i in range(len(chunks))]
-    metadatas = [{"source": source_name} for _ in chunks]
+if __name__ == "__main__":
+    chunks, sources = load_all_chunks()
 
-    collection.add(
-        documents=chunks,
-        ids=ids,
-        metadatas=metadatas
-    )
-    print(f"Ingested {len(chunks)} chunks from {source_name}")
+    vectorizer = TfidfVectorizer(stop_words="english", ngram_range=(1, 2))
+    tfidf_matrix = vectorizer.fit_transform(chunks)
 
-ingest_file("data/faq.txt", "faq")
-ingest_file("data/shipping_refund.txt", "shipping_refund")
-ingest_file("data/warranty.txt", "warranty")
-ingest_file("data/chair_warranty.txt", "chair_warranty")
+    with open("index.pkl", "wb") as f:
+        pickle.dump({
+            "vectorizer": vectorizer,
+            "matrix": tfidf_matrix,
+            "chunks": chunks,
+            "sources": sources
+        }, f)
 
-print("Done! Total chunks in DB:", collection.count())
+    print(f"Done! Total chunks indexed: {len(chunks)}")

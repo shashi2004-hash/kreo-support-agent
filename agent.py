@@ -1,35 +1,30 @@
 import os
+import pickle
 from dotenv import load_dotenv
-import chromadb
-from chromadb.utils import embedding_functions
+from sklearn.metrics.pairwise import cosine_similarity
 from groq import Groq
 from logger import log_conversation
 
 load_dotenv()
 
-# Connect to the same ChromaDB we built with ingest.py
-embedding_fn = embedding_functions.DefaultEmbeddingFunction()
+with open("index.pkl", "rb") as f:
+    index = pickle.load(f)
+    vectorizer = index["vectorizer"]
+    tfidf_matrix = index["matrix"]
+    chunks = index["chunks"]
 
-client = chromadb.PersistentClient(path="./chroma_db")
-collection = client.get_or_create_collection(
-    name="kreo_support",
-    embedding_function=embedding_fn
-)
-
-# Groq client
 groq_client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
-def retrieve_context(question, n_results=3, distance_threshold=1.3):
-    results = collection.query(
-        query_texts=[question],
-        n_results=n_results
-    )
-    chunks = results["documents"][0]
-    distances = results["distances"][0]
 
-    if not distances or distances[0] > distance_threshold:
+def retrieve_context(question, n_results=3, score_threshold=0.15):
+    query_vec = vectorizer.transform([question])
+    sims = cosine_similarity(query_vec, tfidf_matrix)[0]
+    top_idx = sims.argsort()[::-1][:n_results]
+
+    if sims[top_idx[0]] < score_threshold:
         return None
 
-    return "\n\n".join(chunks)
+    top_chunks = [chunks[i] for i in top_idx]
+    return "\n\n".join(top_chunks)
 
 def ask_agent(question):
     context = retrieve_context(question)
@@ -68,8 +63,6 @@ Answer:"""
 
     return answer
 
-# Simple chat loop
-# Simple chat loop
 if __name__ == "__main__":
     print("Kreo Support Agent — type 'quit' to exit\n")
     while True:

@@ -1,5 +1,5 @@
 fastapi
 uvicorn
-chromadb
+scikit-learn
 groq
 python-dotenv
