@@ -2,8 +2,14 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from agent import ask_agent
-
+import subprocess
+import os
 app = FastAPI()
+# Run ingestion on startup if the database doesn't exist yet
+if not os.path.exists("./chroma_db"):
+    print("No database found, running ingestion...")
+    subprocess.run(["python", "ingest.py"])
+    print("Ingestion complete.")
 
 # Allow the frontend HTML file to call this API from the browser
 app.add_middleware(
@@ -23,4 +29,4 @@ def chat(request: ChatRequest):
 
 @app.get("/")
 def health_check():
-    return {"status": "Kreo support agent is running"}
+    return {"status": "Kreo support agent is running"}  
